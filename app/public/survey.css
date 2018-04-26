@@ -1,0 +1,9 @@
+.ui.teal.button {
+	position: absolute;
+	margin-left: 45%;
+	margin-top: 20px;
+}
+
+.selectionOption{
+	opacity:.5;
+}
