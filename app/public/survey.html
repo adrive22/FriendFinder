@@ -1,215 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-	 <link rel="stylesheet" type="text/css" href="survey.css">
-	
-	<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
-<script src="semantic/dist/semantic.min.js"></script>
-
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
 </head>
+
 <body>
-
-<form class="ui form">
-  <div class="field">
-    <label>First Name</label>
-    <input type="text" name="first-name" placeholder="First Name">
-  </div>
-  <div class="field">
-    <label>Picture</label>
-    <input type="url" name="pictureURL" placeholder="picture">
-  </div>
-
-</form>
-
-<div class="form-container">
-<div class="ui grid">
-	<div class="four wide column"></div>
-	<div class="eight wide column">	
-		<div class="ui form">
- 			 <div class="field">
-				<div class="question 1">
-					<p>What is your favorite color?</p>
-				 <select class="ui search dropdown">
-				  <option class="selectionOption" value="">Color</option>
-				  <option value="1">Purple</option>
-				  <option value="2">Teal</option>
-				  <option value="3">Blue</option>
-				  <option value="4">Black</option>
-				  <option value="5">Red</option>
-				  <option value="6">Yellow</option>
-				  <option value="7">Orange</option>
-				</select>
-				</div>
-
-
-		<div class="question 2">
-			<p>How early do you wake up?</p>
-		 <select class="ui search dropdown">
-			<option class="selectionOption" value="">Time</option>
-		  <option value="1">7 AM</option>
-		  <option value="2">8AM</option>
-		  <option value="3">9AM</option>
-		  <option value="4">10AM</option>
-		  <option value="5">These are times I go to bed!</option>
-		</select>
-		</div>
-
-		<div class="question 3">
-			<p>Do you like dancing?</p>
-		 <select class="ui search dropdown">
-			<option class="selectionOption" value="">Dancing?</option>
-		  <option value="1">Yes</option>
-		  <option value="2">No</option>
-		  <option value="3">I would if I knew how to!</option>
-		</select>
-		</div>
-
-		<div class="question 4">
-			<p>Favorite activity?</p>
-		 <select class="ui search dropdown">
-		  <option class="selectionOption" value="">Activity</option>
-		  <option value="1">Swimming</option>
-		  <option value="2">Hiking</option>
-		  <option value="3">Eating</option>
-		  <option value="4">Watching Movies</option>
-		  <option value="5">Traveling</option>
-		  <option value="6">Basketball</option>
-		  <option value="7">None of these</option>
-		</select>
-		</div>
-
-		<div class="question 5">
-			<p>What is your education level?</p>
-		 <select class="ui search dropdown">
-		  <option class="selectionOption" value="">Education</option>
-		  <option value="1">High School Diploma</option>
-		  <option value="2">Some College</option>
-		  <option value="3">Bachelors</option>
-		  <option value="4">Masters</option>
-		  <option value="5">Phd</option>
-		  <option value="6">I am educated in the ways of life</option>
-		  <option value="7">Being educated can not be definied by these standards</option>
-		</select>
-		</div>
-
-		<div class="question 6">
-			<p>Favorite animal?</p>
-		 <select class="ui search dropdown">
-		  <option class="selectionOption" value="">Animal</option>
-		  <option value="1">Dog</option>
-		  <option value="2">Cat</option>
-		  <option value="3">Teacup Pig</option>
-		  <option value="4">Electric Jellyfish</option>
-		  <option value="5">Platypus</option>
-		  <option value="6">Rhino</option>
-		  <option value="7">Miniature Goat</option>
-		</select>
-		</div>
-
-		<div class="question 7">
-			<p>Favorite Music</p>
-		 <select class="ui search dropdown">
-		  <option class="selectionOption" value="">Genre</option>
-		  <option value="1">Rock</option>
-		  <option value="2">Country</option>
-		  <option value="3">Classical</option>
-		  <option value="4">Bluegrass</option>
-		  <option value="5">New Age</option>
-		  <option value="6">Jazz</option>
-		  <option value="7">I don't have a favorite because "I like everything"</option>
-		</select>
-		</div>
-
-		<div class="question 8">
-			<p>Iphone or Android?</p>
-		 <select class="ui search dropdown">
-		  <option class="selectionOption" value="">Phone</option>
-		  <option value="1">Iphone</option>
-		  <option value="2">Android</option>
-		  <option value="3">I don't have either</option>
-		</select>
-		</div>
-
-		<div class="question 9">
-			<p>Are you all caught up on Game of Thrones?</p>
-		 <select class="ui search dropdown">
-		  <option class="selectionOption" value="">GOT</option>
-		  <option value="1">Yes</option>
-		  <option value="2">No, but I want to be!</option>
-		  <option value="3">No, I am too cool to watch shows of the century.</option>
-		  <option value="4">What's Game of Thrones?</option>
-		</select>
-		</div>
-
-		<div class="question 10">
-			<p>North Austin or South Austin?</p>
-		 <select class="ui search dropdown">
-		  <option class="selectionOption" value="">Side</option>
-		  <option value="1">North Side</option>
-		  <option value="2">South Side is the best!</option>
-		  <option value="3">Why is this a question?</option>
-		  <option value="4">Um, why isn't East Side on this?</option>
-		</select>
-		</div>
-	
-	<div class="four wide column"></div>
-</div>	
-</div>
-
-
-		
-		  <button class="ui teal button" id="submitBtn" type="submit">
-		  	<i class="paper plane outline icon"></i>
-				Submit
-			</button>
-		
-
-
-
-
-	
+    <form class="ui form">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" class="firstName" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Picture</label>
+            <input type="url" class="pictureURL" placeholder="picture">
+        </div>
+    </form>
+    <div class="form-container">
+        <div class="ui grid">
+            <div class="four wide column"></div>
+            <div class="eight wide column">
+                <div class="ui form">
+                    <div class="field">
+                        <div class="question 1">
+                            <p>Do you like waking up early?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">Color</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="question 2">
+                            <p>Do you like going out at night?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">Time</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="question 3">
+                            <p>Do you like playing video games?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">Dancing?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                            </select>
+                        </div>
+                        <div class="question 4">
+                            <p>Do you like eating out?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">Activity</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="question 5">
+                            <p>Do you drink?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">Education</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="question 6">
+                            <p>Do you like going to music shows?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">Animal</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="question 7">
+                            <p>Do you like to read?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">Genre</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="question 8">
+                            <p>Do you like science fiction?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">Phone</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="question 9">
+                            <p>Do you watch the news?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">GOT</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="question 10">
+                            <p>Do you want to live in Austin forever?</p>
+                            <select class="ui search dropdown">
+                                <option class="selectionOption" value="">Side</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="four wide column"></div>
+                    </div>
+                </div>
+                <button class="ui teal button" id="submitBtn" type="submit">
+                    <i class="paper plane outline icon"></i> Submit
+                </button>
 </body>
+<script>
+$('.ui.search.dropdown').dropdown()
 
+$("#submitBtn").on("click", function() {
 
- <script>
+var name = $(".firstName").val();
+console.log(name)
+var picture = $(".pictureURL").val();
+console.log(picture)
 
- 	$('.ui.search.dropdown').dropdown()
+var input = $('.ui.search.dropdown').dropdown();
+console.log(input);
+var newFriend = {
+    name: name,
+    picture: picture,
+    scores: []
+}
+for (i = 0; i < 10; i++) {
+    if (isNaN(input[i].innerText)) {
+        alert("Not all fields are completed");
+    } else {
+        newFriend.scores.push(input[i].innerText)
+    }
 
- 	$("#submitBtn").on("click", function(){
- 		var value = $('.ui.search.dropdown').dropdown();
- 			var newFriend = {
-	 			name:
-	 			scores:[]
-	 		}
- 		for(i=0; i < 10; i++){
-	 		newFriend.scores.push(value[i].innerText)
- 		}
- 		console.log(newFriend.scores);
-
- 	$.post("/api/friends", newFriend, function(data){
- 		console.log(data);
-
- 	})
-
-
- 	})
-
- 	
-
-
-
-
- </script>
+}
+console.log(newFriend.scores);
 
 
 
+
+
+
+$.post("/api/friends", newFriend, function(data) {
+    console.log(data);
+
+})
+
+var currentURL = window.location.origin;
+$.ajax({ url: currentURL + "/api/friends", method: "GET" }).done(function(res) {
+
+
+    var bestFriend="";
+    var currentBest = 100;
+    var differenceArray = [];
+
+
+    for (i = 0; i < res.length - 1; i++) {
+        for (j = 0; j < 10; j++) {
+            var currentDifference = newFriend.scores[j] - res[i].scores[j];
+            
+            var difference = (Math.abs(currentDifference));
+            console.log("absolute differece: " + difference);
+        
+    
+            differenceArray.push(difference);
+            console.log("differenceArray: " + differenceArray);
+        }
+
+          let sum = differenceArray.reduce((acc, val) => {
+  		return acc + val;
+			});
+          console.log(sum);
+
+          if(sum < currentBest){
+						bestFriend = res[i].name;
+						currentBest = sum;
+						differenceArray = [];
+					}
+					else{
+						differenceArray =[];
+					}
+					console.log("best friend: " + bestFriend);
+					
+
+        }
+
+ 
+    
+
+
+})
+})
+
+
+</script>
 
 </html>
