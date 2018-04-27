@@ -11,6 +11,10 @@
 </head>
 
 <body>
+
+
+	<h1>Welcome to Friend Finder! Please fill out the form to find yo'self a fran.</h1>
+
     <form class="ui form">
         <div class="field">
             <label>First Name</label>
@@ -18,8 +22,10 @@
         </div>
         <div class="field">
             <label>Picture</label>
-            <input type="url" class="pictureURL" placeholder="picture">
+            <input type="url" class="pictureURL" placeholder="Picture URL">
         </div>
+
+        <h2> Please choose between 1 and 5. 1(strongly disagree) - 5 (strongly agree).</h2>
     </form>
     <div class="form-container">
         <div class="ui grid">
@@ -30,7 +36,7 @@
                         <div class="question 1">
                             <p>Do you like waking up early?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">Color</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -41,7 +47,7 @@
                         <div class="question 2">
                             <p>Do you like going out at night?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">Time</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -52,7 +58,7 @@
                         <div class="question 3">
                             <p>Do you like playing video games?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">Dancing?</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -63,7 +69,7 @@
                         <div class="question 4">
                             <p>Do you like eating out?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">Activity</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -74,7 +80,7 @@
                         <div class="question 5">
                             <p>Do you drink?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">Education</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -85,7 +91,7 @@
                         <div class="question 6">
                             <p>Do you like going to music shows?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">Animal</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -96,7 +102,7 @@
                         <div class="question 7">
                             <p>Do you like to read?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">Genre</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -107,7 +113,7 @@
                         <div class="question 8">
                             <p>Do you like science fiction?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">Phone</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -118,7 +124,7 @@
                         <div class="question 9">
                             <p>Do you watch the news?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">GOT</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -129,7 +135,7 @@
                         <div class="question 10">
                             <p>Do you want to live in Austin forever?</p>
                             <select class="ui search dropdown">
-                                <option class="selectionOption" value="">Side</option>
+                                <option class="selectionOption" value="">Please Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -143,6 +149,13 @@
                 <button class="ui teal button" id="submitBtn" type="submit">
                     <i class="paper plane outline icon"></i> Submit
                 </button>
+
+
+<footer>
+  
+   <a href="/api/friends">
+  API FriendList: </a>.</p>
+</footer>
 
 
 
@@ -253,7 +266,14 @@ $.ajax({ url: currentURL + "/api/friends", method: "GET" }).done(function(res) {
         			modalName.append(bestFriend);
 
         			 $('.ui.modal').modal('show');
-        			
+
+        			function clearDropdown(){ setTimeout(function () { $('.ui.search.dropdown').dropdown('clear') },0) }
+        			clearDropdown()
+
+        			$(".firstName").val("");
+        			$(".pictureURL").val("");
+							
+						
          
         			
 					
