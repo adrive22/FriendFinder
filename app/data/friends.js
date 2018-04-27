@@ -3,6 +3,7 @@
 var friendList = [
   {
     name: "Allison Driver",
+    picture: "https://loremflickr.com/320/240",
     scores: [
       "4",
       "5",

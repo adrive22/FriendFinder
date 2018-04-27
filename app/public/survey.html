@@ -143,6 +143,30 @@
                 <button class="ui teal button" id="submitBtn" type="submit">
                     <i class="paper plane outline icon"></i> Submit
                 </button>
+
+
+
+
+
+<div class="ui modal">
+  <div class="header">Your Best Friend Match Is..</div>
+  <div class="image content">
+    <img class="image" src="">
+    <div class="description">
+      <p></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 </body>
 <script>
 $('.ui.search.dropdown').dropdown()
@@ -209,6 +233,7 @@ $.ajax({ url: currentURL + "/api/friends", method: "GET" }).done(function(res) {
 
           if(sum < currentBest){
 						bestFriend = res[i].name;
+						bestFriendPhoto=res[i].picture;
 						currentBest = sum;
 						differenceArray = [];
 					}
@@ -216,16 +241,28 @@ $.ajax({ url: currentURL + "/api/friends", method: "GET" }).done(function(res) {
 						differenceArray =[];
 					}
 					console.log("best friend: " + bestFriend);
+					console.log("bestfriendPhoto: " + bestFriendPhoto);
 					
+					
+    				
+        			var	modalImg = $(".image"); // hold reference to image in modal
+        			 
+        			 modalImg.attr("src", bestFriendPhoto);
 
+        			var modalName = $(".description");
+        			modalName.append(bestFriend);
+
+        			 $('.ui.modal').modal('show');
+        			
+         
+        			
+					
         }
-
- 
-    
-
+				
+    })
 
 })
-})
+
 
 
 </script>
