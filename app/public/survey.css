@@ -7,3 +7,30 @@
 .selectionOption{
 	opacity:.5;
 }
+
+.input-container{
+	position: relative;
+	margin-left: 38%;
+	margin-top: 20px;
+	width: 300px;
+
+}
+
+.eight.wide.column{
+	margin-left:41%;
+}
+
+h1{
+	text-align: center;
+	margin-top:10px;
+}
+
+h2{
+	text-align: center;
+	margin-top:10px;
+}
+
+footer{
+	position: absolute;
+	margin-left:20px;
+}
